@@ -9,9 +9,11 @@ wheel_diameter = 6.6
 wheel_controller = wc.WheelController()
 
 rate = 0.35
+delta_t = 1.5
+
 wheel_controller.set_left_wheel_angular_velocity(rate)
 wheel_controller.set_right_wheel_angular_velocity(rate)
-time.sleep(1.0)
+time.sleep(delta_t)
 wheel_controller.set_left_wheel_angular_velocity(0.0)
 wheel_controller.set_right_wheel_angular_velocity(0.0)
 print('done')
